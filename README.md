@@ -1,7 +1,7 @@
 ## DBMS Practical MST 
 ### Odd Set
 ### Question 1 
-
+``` sql
 -- Creating the table
 
 CREATE TABLE Purchases(
@@ -13,11 +13,17 @@ CREATE TABLE Purchases(
 -- Inserting the values
 
 INSERT INTO Purchases VALUES
+
 (1, 101, 10, '2025-01-01'),
+
 (2, 102, 10, '2025-01-01'),
+
 (3, 103, 20, '2025-01-01'),
+
 (4, 104, 10, '2025-01-01'),
+
 (5, 101, 20, '2025-01-02'),
+
 (6, 102, 20, '2025-01-02');
 
 -- Main Query
@@ -32,13 +38,13 @@ JOIN Purchases p2
 ON p1.product_id = p2.product_id
 AND p1.purchase_date = p2.purchase_date
 AND p1.customer_id < p2.customer_id;
-
+```
 ### Output:
 
 ![alt text](Question1/Question1_Output.png)
 
 ### Question 2
-
+```sql
 -- Creating Table
 
 CREATE TABLE Employee(
@@ -63,9 +69,10 @@ FROM Employee
 WHERE Salary > 50000;
 
 SELECT * FROM HighSalaryEmployees;
-
+```
 ### Output:
 
 ![alt text](Question2/Question2_Output.png)
+
 
 
