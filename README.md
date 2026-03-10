@@ -1,0 +1,2 @@
+# 25MCD10025_SameerShahi_25MCD_KAR-1_DBMS
+Practical MST of DBMS
